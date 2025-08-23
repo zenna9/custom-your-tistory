@@ -54,6 +54,10 @@
     }
   </style>
 
+  <!--사이드바_목차 관련 코드-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.25.0/tocbot.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.25.0/tocbot.min.js"></script>
+
 </head>
 
 <body id="[##_body_id_##]"
@@ -421,6 +425,7 @@
               </s_index_article_rep>
 
               <s_permalink_article_rep>
+                <div class="toc toc-fixed"></div> <!--사이드바_목차 -->
                 <div class="entry-content">
                   <form class="protected_form" onsubmit="{reloadEntry(14);return false;}">
                     <h2>보호되어 있는 글입니다.</h2>
@@ -866,6 +871,56 @@
       a.innerHTML = a.innerHTML.replace(/`(.*?)`/g, '<cod>$1</cod>');
     });</script>
 
-</body>
+  <!-- 사이드바_목차 -->
+  <script>
+    var content = document.querySelector('.entry-content')
+    var startContent = document.createElement("h7");
+    startContent.classList.add('toc-default-header');
+    content.insertBefore(startContent, content.firstChild)
+    var headings = content.querySelectorAll('h1, h2, h3, h4, h5, h6, h7')
+    var headingMap = {}
 
+    Array.prototype.forEach.call(headings, function (heading) {
+      if (heading.parentElement.classList.contains('another_category')) {
+        heading.classList.add('another_category_header')
+      }
+      else {
+        var id = heading.id ? heading.id : heading.textContent.trim().toLowerCase()
+          .split(' ').join('-').replace(/[\!\@\#\$\%\^\&\*\(\):]/ig, '')
+        headingMap[id] = !isNaN(headingMap[id]) ? ++headingMap[id] : 0
+        if (headingMap[id]) {
+          heading.id = id + '-' + headingMap[id]
+        } else {
+          heading.id = id
+        }
+      }
+    })
+
+    tocbot.init({
+      tocSelector: '.toc',
+      contentSelector: '.entry-content',
+      headingSelector: 'h1, h2, h3, h4, h7',
+      hasInnerContainers: false,
+      ignoreSelector: '.another_category_header'
+    });
+
+    $(document).ready(function () {
+      var toc = $('.toc');
+      toc.addClass('toc-absolute');
+
+      var toc_top = toc.parent().offset().top;
+      $(window).scroll(function () {
+        if ($(this).scrollTop() >= toc_top) {
+          toc.addClass('toc-fixed');
+          toc.removeClass('toc-absolute');
+        } else {
+          toc.addClass('toc-absolute');
+          toc.removeClass('toc-fixed');
+        }
+      });
+
+    });
+
+  </script><!--사이드바_목차 스크립트 종료>
+</body>
 </html>
