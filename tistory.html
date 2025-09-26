@@ -54,7 +54,7 @@
     }
   </style>
 
-  <!--사이드바 목차 관련 코드-->
+  <!--사이드바_목차 관련 코드-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.25.0/tocbot.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.25.0/tocbot.min.js"></script>
 
@@ -864,11 +864,6 @@
     </div>
   </s_t3>
   <script src="./images/script.js"></script>
-  <script>
-    let textNodes = document.querySelectorAll("div.tt_article_useless_p_margin.contents_style > *:not(figure):not(pre)");
-    textNodes.forEach(function (a) {
-      a.innerHTML = a.innerHTML.replace(/`(.*?)`/g, '<cod>$1</cod>');
-    });</script>
 
   <!-- 사이드바_목차 -->
   <script>
@@ -920,6 +915,22 @@
 
     });
 
-  </script><!--사이드바_목차 스크립트 종료>
+  </script>
+  <!--사이드바_목차 스크립트 종료-->
+
+  <!-- 코드라인 css적용 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const contentsBodySelector = [
+        "div.tt_article_useless_p_margin.contents_style > *:not(figure):not(pre)",
+        "div.blogview_content > *:not(figure):not(pre)"
+      ];
+      let textNodes = document.querySelectorAll(contentsBodySelector.join(","));
+
+      textNodes.forEach(function (a) {
+        a.innerHTML = a.innerHTML.replace(/`(.*?)`/g, '<cod>$1</cod>');
+      });
+    });
+  </script>
 </body>
 </html>
