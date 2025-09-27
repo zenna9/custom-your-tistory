@@ -4724,3 +4724,60 @@ hr[data-ke-style='style8'],
 .revenue_unit_wrap, .adsbygoogle {
   display: none !important;
 }
+
+/* 목차 사이드바 tocbot*/
+.toc-absolute {
+  display: flex;
+  position: absolute;
+  margin-top: 165px;
+}
+
+.toc-fixed {
+  position: fixed;
+  top: 165px;
+}
+
+.toc {
+  right: calc((100% - 850px) / 2 - 300px);
+  width: 250px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.toc-list {
+  margin-top: 10px !important;
+  padding-bottom: 5px !important;
+  font-size: 0.9em;
+}
+
+.toc>.toc-list li {
+  margin-bottom: 10px;
+}
+
+.toc>.toc-list .toc-link::before {
+  margin-top: -0.45em;
+  align-items: center;
+  align-content: center;
+}
+
+.toc>.toc-list li:last-child {
+  margin-bottom: 0;
+}
+
+.toc>.toc-list .node-name--H7 {
+  display: none;
+}
+
+.toc-default-header {
+  display: none;
+}
+
+.toc>.toc-list li a {
+  text-decoration: none;
+}
+
+.toc-list-item .is-collapsed {
+  max-height: 3000px;
+}
+
+/* 목차 사이드바 tocbot 종료*/
