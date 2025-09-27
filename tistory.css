@@ -22,6 +22,19 @@
 /* Web Font Load */
 @import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo:800&subset=korean');
 
+@font-face {
+  /* 썸네일 beyond the front */
+  font-family: 'Mbc1961';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/MBC1961M.woff2') format('woff2');
+  font-weight: normal;
+  font-display: swap;
+}
+
+:root {
+  --main-color: #3498db;
+  --screen-max-width: 1500px;
+}
+
 /* Type Selector Reset */
 body {
   -webkit-text-size-adjust: 100%;
@@ -650,8 +663,9 @@ a.btn {
   overflow: hidden;
   max-width: 65%;
   text-overflow: ellipsis;
-  font-weight: 300;
-  font-size: 2.125em;
+  font-family: 'Mbc1961', Pretendard-Regular, sans-serif;
+  font-weight: 700;
+  font-size: 4.125em;
   line-height: 1.2352;
   color: #fff;
   display: -webkit-box;
@@ -3096,9 +3110,9 @@ a.btn {
 
   .main-slider ul li .text {
     max-width: 100%;
-    font-weight: 300;
-    font-size: 1.75em;
-    line-height: 2.25rem;
+    font-weight: 700;
+    font-size: 3em;
+    line-height: 9.25rem;
     -webkit-line-clamp: 3;
   }
 
