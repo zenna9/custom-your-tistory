@@ -4709,3 +4709,8 @@ hr[data-ke-style='style8'],
 .box-timeline-content {
   word-break: break-all;
 }
+
+/* 숫자 리스트 밑에 도형 리스트 오면 텍스트 겹치는 문제 */
+.entry-content ol ul li {
+  text-indent: 0;
+}
