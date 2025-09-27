@@ -4714,3 +4714,13 @@ hr[data-ke-style='style8'],
 .entry-content ol ul li {
   text-indent: 0;
 }
+
+/* 이미지 테두리 적용 */
+#article-view figure.imageblock img {
+  border: 1px solid rgba(121, 121, 121, 0.69);
+}
+
+/* 구글 애드센스 강제로 삭제해버림 */
+.revenue_unit_wrap, .adsbygoogle {
+  display: none !important;
+}
