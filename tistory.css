@@ -4449,12 +4449,26 @@ hr[data-ke-style='style8'],
 
 /* 코드 블럭 */
 #article-view pre code.hljs {
-  font-size: 14px;
-  padding: 20px;
+  font-size: 100%;
+  padding: 5px;
   font-family: SF Mono, Menlo, Consolas, Monaco, monospace;
   border: solid 1px #ebebeb;
-  line-height: 1.71;
-  overflow: auto;
+  border-radius: 7px;
+  line-height: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: pre; /* 줄바꿈하지 않음 */
+}
+
+#article-view pre code.hljs td {
+  font-size: 0.85rem;
+}
+
+.hljs-ln-numbers {
+  border-right: 1px #797979 solid;
+  text-align: right;
+  user-select: none;
+  padding: 0 5px 0 0 !important;
 }
 
 /* 접은 글 */
