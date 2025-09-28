@@ -199,7 +199,6 @@
         <div class="content-wrap">
           <article id="content">
             [##_revenue_list_upper_##]
-            <div class="toc toc-fixed"></div>
             <s_cover_group>
               <s_cover_rep>
 
@@ -557,7 +556,7 @@
 
           </article>
           <aside id="aside" class="sidebar">
-
+            <div class="toc toc-fixed"></div>
             <div class="sidebar-1">
               <s_sidebar>
                 <s_sidebar_element>
@@ -776,7 +775,8 @@
     $(document).ready(function () {
       var toc = $('.toc');
       toc.addClass('toc-absolute');
-
+      toc.removeClass('toc-fixed');
+      
       var toc_top = toc.parent().offset().top;
       $(window).scroll(function () {
         if ($(this).scrollTop() >= toc_top) {

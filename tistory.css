@@ -4726,27 +4726,23 @@ hr[data-ke-style='style8'],
 }
 
 /* 목차 사이드바 tocbot*/
-.toc-absolute {
-  display: flex;
-  position: absolute;
-  margin-top: 165px;
-}
-
 .toc-fixed {
   position: fixed;
-  top: 165px;
+  top: 75px;
+  max-width: 21.296296296296296%;
 }
 
 .toc {
-  right: calc((100% - 850px) / 2 - 300px);
-  width: 250px;
-  padding: 10px;
+  background-color: #f3f3f3;
+  z-index: 2;
+  width: 100%;
+  padding: 0 10px;
   box-sizing: border-box;
 }
 
 .toc-list {
-  margin-top: 10px !important;
-  padding-bottom: 5px !important;
+  margin-top: 20px !important;
+  margin-bottom: 15px !important;
   font-size: 0.9em;
 }
 
@@ -4778,6 +4774,13 @@ hr[data-ke-style='style8'],
 
 .toc-list-item .is-collapsed {
   max-height: 3000px;
+}
+/* 사이드바_목차 - 게시글에서는 사이드바 안보이게 설정 */
+body#tt-body-page .sidebar-1,
+body#tt-body-page .sidebar-2,
+body#tt-body-page .sidebar-3,
+body#tt-body-page .sidebar-4 {
+  display: none;
 }
 
 /* 목차 사이드바 tocbot 종료*/
