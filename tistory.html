@@ -776,7 +776,7 @@
       var toc = $('.toc');
       toc.addClass('toc-absolute');
       toc.removeClass('toc-fixed');
-      
+
       var toc_top = toc.parent().offset().top;
       $(window).scroll(function () {
         if ($(this).scrollTop() >= toc_top) {
@@ -792,6 +792,13 @@
 
   </script>
   <!--사이드바_목차 스크립트 종료-->
+  <!-- 벡틱을 코드라인으로 -->
+  <script>let textNodes = document.querySelectorAll("div.tt_article_useless_p_margin.contents_style > *:not(figure):not(pre)");
+
+    textNodes.forEach(function (a) {
+      a.innerHTML = a.innerHTML.replace(/`(.*?)`/g, '<cod>$1</cod>');
+    });
+  </script>
 </body>
 
 </html>

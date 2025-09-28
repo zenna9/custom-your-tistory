@@ -4784,3 +4784,14 @@ body#tt-body-page .sidebar-4 {
 }
 
 /* 목차 사이드바 tocbot 종료*/
+
+/* 라인 코드블럭 */
+cod {
+  background-color: #eee;
+  color: tomato;
+  font-size: 0.9em;
+  line-height: 1em;
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 3px;
+}
