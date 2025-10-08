@@ -3511,12 +3511,16 @@ button {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
 }
 
+#article .contents_style table[data-ke-align] {
+  max-width: 100%;
+}
+
 #article .contents_style table[data-ke-align] td,
 #article .contents_style table[data-ke-align] th {
 
   box-sizing: border-box;
 
-  border-width: 0px;
+  border-width: 1px;
 
   border-bottom-width: 1px;
 
