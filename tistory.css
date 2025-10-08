@@ -6030,3 +6030,9 @@ table.hljs-ln td.hljs-ln-numbers {
 table.hljs-ln td.hljs-ln-code {
   padding: 1px 20px 1px 0.6em;
 }
+
+/* 이미지 그림자 */
+#tt-body-page figure.imageblock img,
+figure.imageblock img {
+  box-shadow: 0px 0px 4px 0px #bfbfbf;
+}
