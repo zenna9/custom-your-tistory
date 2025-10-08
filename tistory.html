@@ -1734,67 +1734,9 @@
                   <s_tag_label>
                     <div class="flex flex-wrap mt-1 gap-x-2 text-[0]" id="tags" x-data="tag">[##_tag_label_rep_##]</div>
                   </s_tag_label>
-                  <div class="border-t border-b border-h-300 dark:border-h-600 mt-6 py-8 flex gap-x-5 items-center"
-                    id="author"><img class="thumb lazyload rounded-full object-cover w-20 h-20" data-src="[##_image_##]"
-                      data-sizes="auto" width="80" height="80" alt="[##_blogger_##]">
-                    <div class="profile flex flex-col gap-y-1">
-                      <div class="blogger text-h-800 dark:text-h-200 font-bold">[##_blogger_##]</div>
-                      <div class="desc leading-7 text-sm text-h-400">[##_desc_##]</div>
-                    </div>
-                  </div>
                 </footer>
               </section>
               <aside id="popup">
-                <s_article_prev>
-                  <div class="popup fixed bottom-3 flex z-[100] h-[calc(theme(spacing.24))] max-lg:hidden ml-4"
-                    x-data="{ open: true }" x-transition:enter="transition ease-linear duration-200"
-                    x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
-                    x-transition:leave="transition ease-linear duration-200" x-transition:leave-start="opacity-100"
-                    x-transition:leave-end="opacity-0" x-show="open && $store.indicator.scrolled > 50" id="prev"><a
-                      class="link absolute top-0 left-0 w-full h-full z-10" href="[##_article_prev_link_##]"></a>
-                    <s_article_prev_thumbnail>
-                      <div class="img"><img class="thumb w-24 h-24 object-cover"
-                          src="[##_article_prev_thumbnail_link_##]" alt="" width="96" height="96"></div>
-                    </s_article_prev_thumbnail>
-                    <div
-                      class="content relative w-64 p-4 border-box flex flex-col gap-y-2 bg-h-200 dark:text-h-200 dark:bg-h-700">
-                      <button class="close absolute text-base top-3 right-4 text-h-400 dark:hover:text-h-200 z-20"
-                        @click="open = ! open"><span class="txt text-hidden">닫기</span><i
-                          class="ico fa-solid fa-xmark"></i></button>
-                      <div class="tit text-xs text-h-400">이전 글</div>
-                      <div class="info text-h-500 dark:text-h-200">
-                        <div class="tit text-sm font-semibold text-overflow-hidden max-w-[calc(theme(spacing.56))]">
-                          [##_article_prev_title_##]</div>
-                        <div class="desc text-2xs"><time class="date">[##_article_prev_date_##]</time></div>
-                      </div>
-                    </div>
-                  </div>
-                </s_article_prev>
-                <s_article_next>
-                  <div class="popup fixed bottom-3 flex z-[100] h-[calc(theme(spacing.24))] max-lg:hidden right-0 mr-4"
-                    x-data="{ open: true }" x-transition:enter="transition ease-linear duration-200"
-                    x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
-                    x-transition:leave="transition ease-linear duration-200" x-transition:leave-start="opacity-100"
-                    x-transition:leave-end="opacity-0" x-show="open && $store.indicator.scrolled > 50" id="next"><a
-                      class="link absolute top-0 left-0 w-full h-full z-10" href="[##_article_next_link_##]"></a>
-                    <s_article_next_thumbnail>
-                      <div class="img"><img class="thumb w-24 h-24 object-cover"
-                          src="[##_article_next_thumbnail_link_##]" alt="" width="96" height="96"></div>
-                    </s_article_next_thumbnail>
-                    <div
-                      class="content relative w-64 p-4 border-box flex flex-col gap-y-2 bg-h-200 dark:text-h-200 dark:bg-h-700">
-                      <button class="close absolute text-base top-3 right-4 text-h-400 dark:hover:text-h-200 z-20"
-                        @click="open = ! open"><span class="txt text-hidden">닫기</span><i
-                          class="ico fa-solid fa-xmark"></i></button>
-                      <div class="tit text-xs text-h-400">다음 글</div>
-                      <div class="info text-h-500 dark:text-h-200">
-                        <div class="tit text-sm font-semibold text-overflow-hidden max-w-[calc(theme(spacing.56))]">
-                          [##_article_next_title_##]</div>
-                        <div class="desc text-2xs"><time class="date">[##_article_next_date_##]</time></div>
-                      </div>
-                    </div>
-                  </div>
-                </s_article_next>
               </aside>
               <section class="permalink-container" id="replies">
                 <s_rp>
