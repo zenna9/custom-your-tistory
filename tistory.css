@@ -3929,6 +3929,7 @@ button {
 }
 
 #article .contents_style pre code.hljs {
+  padding: 0px;
 
   --tw-bg-opacity: 1;
 
@@ -5998,4 +5999,30 @@ div[data-tistory-react-app=Namecard] {
 #bottom .btn .ico {
   font-size: 1rem;
   line-height: 1.5rem
+}
+
+/* 코드블럭 커스텀 */
+table.hljs-ln tr:hover{
+  background: #3e3e3e1a;
+}
+.dark table.hljs-ln tr:hover{
+  background: #cdcdcd1a;
+}
+
+table.hljs-ln tr:first-child td {
+  padding-top: 15px;
+}
+
+table.hljs-ln tr:last-child td {
+  padding-bottom: 15px;
+}
+
+table.hljs-ln td.hljs-ln-numbers {
+  padding: 0 0.4em;
+  border-right: 1px solid #7e7e7e69;
+  color: #7e7e7e;
+}
+
+table.hljs-ln td.hljs-ln-code {
+  padding: 1px 20px 1px 0.6em;
 }
