@@ -6036,3 +6036,8 @@ table.hljs-ln td.hljs-ln-code {
 figure.imageblock img {
   box-shadow: 0px 0px 4px 0px #bfbfbf;
 }
+/* 구글 애드센스 강제로 삭제해버림 */
+div[data-tistory-react-app="NaverAd"],
+ins[class="adsbygoogle"] {
+  display: none !important;
+}
