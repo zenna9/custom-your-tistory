@@ -5517,7 +5517,7 @@ div[data-tistory-react-app=Namecard] {
 }
 
 #paging span:not(.selected) {
-  display: none
+  display: inline-block
 }
 
 @media (min-width: 1100px) {
