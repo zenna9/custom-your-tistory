@@ -1926,7 +1926,7 @@ button {
 
 .before\:bg-h-900\/20::before {
   content: var(--tw-content);
-  background-color: rgb(0 0 0 / 0.2);
+  background-color: rgb(0 0 0 / 64%);
 }
 
 .before\:bg-gradient-to-b::before {
