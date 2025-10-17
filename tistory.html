@@ -2050,6 +2050,13 @@ hELLO 는 무료인 만큼, 링크의 주소는 반드시 지켜주시기 바랍
       </aside>
     </div>
   </s_t3>
+  <!-- 벡틱을 코드라인으로 -->
+  <script>let textNodes = document.querySelectorAll("div.tt_article_useless_p_margin.contents_style > *:not(figure):not(pre)");
+
+    textNodes.forEach(function (a) {
+      a.innerHTML = a.innerHTML.replace(/`(.*?)`/g, '<code>$1</code>');
+    });
+  </script>
 </body>
 
 </html>
