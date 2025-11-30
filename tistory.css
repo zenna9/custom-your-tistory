@@ -125,7 +125,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: SUIT, ui-sans-serif, system-ui, sans-serif, "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -6019,10 +6019,11 @@ div[data-tistory-react-app=Namecard] {
 }
 
 /* 코드블럭 커스텀 */
-table.hljs-ln tr:hover{
+table.hljs-ln tr:hover {
   background: #3e3e3e1a;
 }
-.dark table.hljs-ln tr:hover{
+
+.dark table.hljs-ln tr:hover {
   background: #cdcdcd1a;
 }
 
