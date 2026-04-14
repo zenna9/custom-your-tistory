@@ -3300,6 +3300,12 @@ button {
   line-height: 1.75rem
 }
 
+#article .contents_style h2 span,
+#article .contents_style h3 span,
+#article .contents_style h4 span {
+  padding: 5px;
+}
+
 @media (min-width: 1100px) {
 
   #article .contents_style h2 {
