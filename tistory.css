@@ -3586,11 +3586,11 @@ button {
 
 @media not all and (min-width: 1100px) {
 
-  #article .contents_style figure.imageblock.alignCenter,
-  #article .contents_style figure.imagegridblock {
+#article .contents_style figure.imageblock.alignCenter,
+#article .contents_style figure.imagegridblock {
 
-    width: 100% !important
-  }
+  width: 100% !important
+}
 }
 
 #article .contents_style figure[data-ke-type=opengraph] a {
@@ -6043,6 +6043,7 @@ table.hljs-ln td.hljs-ln-numbers {
 
 table.hljs-ln td.hljs-ln-code {
   padding: 1px 20px 1px 0.6em;
+  width: 100%;
 }
 
 /* 이미지 그림자 */
