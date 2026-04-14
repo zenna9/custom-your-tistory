@@ -88,15 +88,15 @@ abbr:where([title]) {
 Remove the default font size and weight for headings.
 */
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   font-size: inherit;
-  font-weight: inherit;
-}
+  font-weight: 700;
+} */
 
 /*
 Reset links to optimize for opt-in styling instead of opt-out.
@@ -125,7 +125,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: SUIT, ui-sans-serif, system-ui, sans-serif, "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family:  SUIT, ui-sans-serif, system-ui, sans-serif, "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -3272,7 +3272,7 @@ button {
 
   scroll-margin-top: 5rem;
 
-  font-weight: 500
+  font-weight: 800
 }
 
 #article .contents_style h2 a,
@@ -6019,11 +6019,10 @@ div[data-tistory-react-app=Namecard] {
 }
 
 /* 코드블럭 커스텀 */
-table.hljs-ln tr:hover {
+table.hljs-ln tr:hover{
   background: #3e3e3e1a;
 }
-
-.dark table.hljs-ln tr:hover {
+.dark table.hljs-ln tr:hover{
   background: #cdcdcd1a;
 }
 
@@ -6051,13 +6050,11 @@ table.hljs-ln td.hljs-ln-code {
 figure.imageblock img {
   box-shadow: 0px 0px 4px 0px #bfbfbf;
 }
-
 /* 이미지 최대 크기 강제 */
 #tt-body-page figure.imageblock,
 figure.imageblock {
-  max-width: 100% !important;
+  max-width: 100% !important;  
 }
-
 /* 구글 애드센스 강제로 삭제해버림 */
 div[data-tistory-react-app="NaverAd"],
 ins[class="adsbygoogle"] {
@@ -6065,5 +6062,5 @@ ins[class="adsbygoogle"] {
 }
 
 hide {
-  color: transparent;
+  color : transparent;
 }
