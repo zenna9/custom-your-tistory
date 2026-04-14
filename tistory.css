@@ -3515,6 +3515,14 @@ button {
   max-width: 100%;
 }
 
+#article .contents_style table[data-ke-align] thead {
+  background-color: #f5f5f5;
+}
+
+.dark #article .contents_style table[data-ke-align] thead {
+  background-color: #474747;
+}
+
 #article .contents_style table[data-ke-align] td,
 #article .contents_style table[data-ke-align] th {
 
@@ -3536,9 +3544,9 @@ button {
 
   padding-right: 0.75rem;
 
-  padding-top: 1rem;
+  padding-top: 0.5rem;
 
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 
   font-size: 0.875rem;
 
@@ -6053,7 +6061,7 @@ figure.imageblock img {
 /* 이미지 최대 크기 강제 */
 #tt-body-page figure.imageblock,
 figure.imageblock {
-  max-width: 100% !important;  
+  max-width: 100% !important;
 }
 /* 구글 애드센스 강제로 삭제해버림 */
 div[data-tistory-react-app="NaverAd"],
